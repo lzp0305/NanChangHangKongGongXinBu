@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>南昌航空大学</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="lib/idangerous.swiper.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="lib/jquery-1.10.1.min.js"></script>
+	<script src="lib/idangerous.swiper.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body style="font-family: Microsoft YaHei;">
+	<div class="header">
+		<div class="center">
+			<a href="" class="logo"><img src="images/logo.png" alt="" height="52"></a>
+			<div class="ht">江西省人工智能优势科技创新团队</div>
+			<a href="" class="te">&gt;English</a>
+		</div>
+	</div>
+	<div class="banner">
+		<div class="swiper-container container1">
+			<div class="swiper-wrapper wrapper1">
+				<div class="swiper-slide" style="background: url(images/sy-banner1.jpg) center no-repeat"></div>
+			</div>
+			<a href="" class="arrow-left"></a>
+			<a href="" class="arrow-right"></a>
+		</div>
+		<script>
+		var swiper1 = new Swiper('.container1',{
+			loop:true,
+			grabCursor: true,
+		});
+		$('.arrow-left').on('click', function(e){
+			e.preventDefault()
+			swiper1.swipePrev()
+		});
+		$('.arrow-right').on('click', function(e){
+			e.preventDefault()
+			swiper1.swipeNext()
+		});
+		</script>
+		<div class="search">
+			<input type="text" class="search-text" placeholder="输入姓名、个人简历、研究方向、科研成果、标签、院系">
+			<input type="submit" class="search-button" value="">
+		</div>
+		<script>
+			$(document).ready(function(){
+				$('.search-text').focus(function(){
+					$('.zz').css("display","block")
+				});
+				$('.search-text').blur(function(){
+					$('.zz').css('display','none')
+				});
+			}
+		</script>
+		<div class="zz"></div>
+	</div>
+</body>
+</html>
