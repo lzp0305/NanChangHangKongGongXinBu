@@ -21,7 +21,7 @@
 	<div class="banner">
 		<div class="swiper-container container1">
 			<div class="swiper-wrapper wrapper1">
-				<div class="swiper-slide" style="background: url(images/sy-banner1.jpg) center no-repeat"></div>
+				<div class="swiper-slide" style="background: url(images/sy-banner1.jpg) center no-repeat"><a href=""></a></div>
 			</div>
 			<a href="" class="arrow-left"></a>
 			<a href="" class="arrow-right"></a>
@@ -45,16 +45,59 @@
 			<input type="submit" class="search-button" value="">
 		</div>
 		<script>
-			$(document).ready(function(){
-				$('.search-text').focus(function(){
-					$('.zz').css("display","block")
+			$(".search").on("click", function(e){
+				$(".zhezhao").show();
+				$(document).one("click", function(){
+					$(".zhezhao").hide();
 				});
-				$('.search-text').blur(function(){
-					$('.zz').css('display','none')
-				});
-			}
+				e.stopPropagation();
+			});
+			$(".search").on("click", function(e){
+				e.stopPropagation();
+			});
+			
 		</script>
-		<div class="zz"></div>
+		<div class="zhezhao"></div>
+		<div class="nav">
+			<ul class="u1">
+				<li class="l1">
+					<a href="">团队负责人</a>
+					<ul class="u2">
+						<li class="l2"><a href="">团队负责人</a></li>
+						<li class="l2"><a href="">团队负责人</a></li>
+						<li class="l2"><a href="">团队负责人</a></li>
+						<li class="l2"><a href="">团队负责人</a></li>
+					</ul>
+				</li>
+				<li class="l1"><a href="">团队概况</a></li>
+				<li class="l1">
+					<a href="">人员构成</a>
+					<ul class="u2">
+						<li class="l2"><a href="">人员构成</a></li>
+						<li class="l2"><a href="">人员构成</a></li>
+						<li class="l2"><a href="">人员构成</a></li>
+					</ul>
+				</li>
+				<li class="l1"><a href="">研究成果</a></li>
+				<li class="l1"><a href="">科研项目</a></li>
+				<li class="l1"><a href="">人才培训</a></li>
+				<li class="l1"><a href="">仪器设备</a></li>
+				<li class="l1"><a href="">合作交流</a></li>
+			</ul>
+			<script>
+				$(document).ready(function(){
+					$('.l1').hover(function(){
+						$('.u2',this).css('bottom','65px').show();
+					},function(){
+						$('.u2',this).hide();
+					});
+				})
+			</script>
+		</div>
+	</div>
+	
+	<div class="footer">
+		版权所有：南昌航空大学江西省人工智能优势科技创新团队&emsp;地址：南昌市丰和南大道696号<br>学校邮编：330063&emsp;赣洪备：2-4-3-2002020&emsp;技术支持：<a href="http://www.yunduancn.com">云端科技</a>
 	</div>
 </body>
 </html>
