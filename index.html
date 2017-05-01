@@ -45,17 +45,32 @@
 			<input type="submit" class="search-button" value="">
 		</div>
 		<script>
+			// 通过控制 display 属性来控制显示与隐藏 ↓
+			// $(".search").on("click", function(e){
+			// 	$(".zhezhao").show();
+			// 	$(document).one("click", function(){
+			// 		$(".zhezhao").hide();
+			// 	});
+			// 	e.stopPropagation();
+			// });
+			// $(".search").on("click", function(e){
+			// 	e.stopPropagation();
+			// });
+			
+			
+
+			// 通过控制 opacity 属性来控制显示与隐藏 ↓
 			$(".search").on("click", function(e){
-				$(".zhezhao").show();
+				$(".zhezhao").fadeIn(500);
 				$(document).one("click", function(){
-					$(".zhezhao").hide();
+					$(".zhezhao").fadeOut(500);
 				});
 				e.stopPropagation();
 			});
 			$(".search").on("click", function(e){
 				e.stopPropagation();
 			});
-			
+
 		</script>
 		<div class="zhezhao"></div>
 		<div class="nav">

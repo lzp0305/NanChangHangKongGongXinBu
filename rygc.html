@@ -292,9 +292,9 @@
 							$('.zhezhao-all').css('height',hh2);
 						};
 						// 遮罩层的显示与隐藏
-						$(".zhezhao-all").show();
+						$(".zhezhao-all").fadeIn(200);
 						$('.close').on("click", function(){
-							$(".zhezhao-all").hide();
+							$(".zhezhao-all").fadeOut(200);
 						});
 						e.stopPropagation();
 					});
