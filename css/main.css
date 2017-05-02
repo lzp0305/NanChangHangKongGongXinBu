@@ -16,7 +16,7 @@ body { background: #fff; }
 .arrow-right:hover { background: url(../images/arrow-right-hover.png) no-repeat; }
 .search { position: absolute; top: 97px; left: 50%; margin-left: -600px; z-index: 100; width: 443px; height: 46px; border-radius: 5px; background: #fff; }
 .search-text,.search-button { border: none; outline: none; float: left; }
-.search-text { width: 362px; margin:0 18px; font-size: 14px; line-height: 46px; }
+.search-text { width: 362px; padding:0 18px; font-size: 14px; line-height: 46px; }
 .search-text:-ms-input-placeholder { color: #b4b4b4; }
 .search-text::-webkit-input-placeholder { color: #b4b4b4; }
 .search-text::-moz-placeholder { color: #b4b4b4; }
@@ -42,7 +42,7 @@ body { background: #fff; }
 .ny-l2:hover { background: #579dff; }
 
 .clear { clear: both; }
-.ny-banner { height: 381px; width: 100%; }
+.ny-banner { height: 381px; width: auto; }
 .ny-left { float: left; position: relative; top: -32px; }
 .ny-title { width: 230px; height: 70px; padding-right: 24px; font-size: 24px; text-align: center; line-height: 70px; color: #fff; background: url(../images/left-title.png) no-repeat; }
 .left-list { width: 230px; margin-top: 7px; }
@@ -88,7 +88,7 @@ body { background: #fff; }
 .close:hover { background: url(../images/close-hover.png) no-repeat; }
 .tcc-title { height: 32px; line-height: 32px; width: 100%; background: #99ccff; text-align: center; color: #fff; font-size: 16px; }
 .tcc-main { width: 674px;  margin: 29px 10px; }
-.tcc-name { position: relative; width: 480px; padding-left: 195px; height: 207px; font-size: 14px; line-height: 32px; color: #323232; }
+.tcc-name { position: relative; width: 480px; padding-left: 195px; min-height: 207px; font-size: 14px; line-height: 32px; color: #323232; }
 .tcc-img { position: absolute; top: 0; left: 0; width: 167px; height: 207px;  }
 .tcc-block { width: 674px; margin-top: 24px; }
 .tcc-little-title { width: 98px; height: 29px; text-align: center; line-height: 29px; font-size: 16px; color: #fff; background-color: #99ccff; -moz-box-shadow: 10px 10px 5px #cce5ff /* 老的 Firefox */;box-shadow: 4px -3px 0 #cce5ff; }
@@ -97,7 +97,7 @@ body { background: #fff; }
 
 
 .tdgk-text { margin: 30px 0 69px; font-size: 14px; line-height: 32px; color: #323232; }
-
+.tdgk-text img { max-width: 100%; }
 .yqsb-list { width: 972px; }
 .yqsb-list li { width: 301px; height: 262px; margin-top: 23px; margin-right: 23px; float: left; }
 .yqsb-list a { display: block; width: 301px; height: 43px; padding-top: 219px; font-size: 14px; color: #323232; line-height: 43px; text-align: center; }
